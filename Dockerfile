@@ -14,5 +14,7 @@ COPY location /etc/nginx/location
 # expose both the HTTP (80) and HTTPS (443) ports
 EXPOSE 80 443
 
+USER 10001
+
 CMD ["nginx"]
 
